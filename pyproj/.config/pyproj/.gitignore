@@ -1,4 +1,3 @@
-
 # Python-generated files
 __pycache__/
 *.py[oc]
@@ -10,14 +9,12 @@ wheels/
 # Virtual environments
 .venv
 
+
 # Folders
-data/**
-!data/**/
-!data/**/.gitkeep
+data/
 
 # Files
 hello.py
 a.py
 pyrightconfig.json
 ruff.toml
-
