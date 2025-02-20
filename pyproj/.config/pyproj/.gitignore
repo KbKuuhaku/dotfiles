@@ -1,0 +1,23 @@
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Folders
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# Files
+hello.py
+a.py
+pyrightconfig.json
+ruff.toml
+
