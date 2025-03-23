@@ -23,12 +23,6 @@ function M.config()
                     ["<C-j>"] = "move_selection_next",
                 }
             },
-            file_ignore_patterns = {
-                "__pycache__", -- python
-                "wandb",
-                "target",      -- rust
-                "node_module"
-            }
         },
         pickers = {
             -- Default configuration for builtin pickers goes here:
@@ -42,7 +36,7 @@ function M.config()
                 previewer = false,
                 theme = "dropdown",
                 follow = true, -- allow it to follow symlinks
-                no_ignore = true
+                hidden = true,
             },
             buffers = {
                 previewer = false,
@@ -68,7 +62,7 @@ function M.config()
     })
     -- To get fzf loaded and working with telescope, you need to call
     -- load_extension, somewhere after setup function:
-    require('telescope').load_extension('fzf')
+    ts.load_extension('fzf')
 end
 
 M.keys = {

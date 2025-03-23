@@ -2,7 +2,7 @@ vim.g.mapleader = " " -- leader key
 
 vim.opt.showcmd = true
 
-vim.opt.guicursor = "" -- block type
+-- vim.opt.guicursor = "" -- block type
 vim.opt.cursorline = true
 
 vim.opt.nu = true
