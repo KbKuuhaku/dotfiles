@@ -9,7 +9,7 @@ return {
     config = function()
         local lsp_config = require("lspconfig")
         -- local capabilities = require("cmp_nvim_lsp").default_capabilities()
-        -- local capabilities = require("blink.cmp").get_lsp_capabilities()
+        local capabilities = require("blink.cmp").get_lsp_capabilities()
         local util = require("lspconfig/util")
 
 
@@ -80,19 +80,25 @@ return {
             ["cmake"] = {},
             ["clangd"] = {},
             ["marksman"] = {},
+            ["csharp_ls"] = {},
+
             -- and more
         }
         require("mason").setup()
         require("mason-lspconfig").setup({
-            ensure_installed = vim.tbl_keys(servers or {})
+            ensure_installed = vim.tbl_keys(servers)
         })
 
         -- Set up servers
         for server_name, config in pairs(servers) do
             config["on_attach"] = on_attach
             config["capabilities"] = capabilities
-            config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
             lsp_config[server_name].setup(config)
         end
+
+        local _config = {}
+        _config["on_attach"] = on_attach
+        _config["capabilities"] = capabilities
+        lsp_config["gdscript"].setup(_config)
     end
 }

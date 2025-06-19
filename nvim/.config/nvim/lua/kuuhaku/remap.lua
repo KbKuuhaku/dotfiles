@@ -7,10 +7,6 @@ vim.keymap.set("n", "J", "mzJ`z")
 -- Keep copied text in buffer
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
--- Buffers
-vim.keymap.set("n", "<M-o>", "<cmd>bnext<CR>")
-vim.keymap.set("n", "<M-i>", "<cmd>bprev<CR>")
-
 -- Quick fix list
 vim.keymap.set("n", "<M-[>", "<cmd>cprev<CR>")
 vim.keymap.set("n", "<M-]>", "<cmd>cnext<CR>")

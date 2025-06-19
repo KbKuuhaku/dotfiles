@@ -81,7 +81,6 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
-    zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -114,6 +113,8 @@ source $ZSH/oh-my-zsh.sh
 
 ## Alias
 alias v=nvim
+alias godot="/home/kuuhaku/Apps/Godot/Godot_v4.4.1-stable_mono_linux.x86_64"
+
 # alias zotero=$HOME/dev/libs/zotero-app/zotero
 
 # Bind keys (bindkey -L to see all bindings)

@@ -1,5 +1,6 @@
 return { -- Autoformat
     'stevearc/conform.nvim',
+    async = true,
     lazy = false,
     opts = {
         notify_on_error = true,
@@ -17,6 +18,7 @@ return { -- Autoformat
             lua = { 'stylua' },
             -- Conform can also run multiple formatters sequentially
             python = { "isort", "ruff_format" },
+            gdscript = { "gdformat" }
             --
             -- You can use a sub-list to tell conform to run *until* a formatter
             -- is found.

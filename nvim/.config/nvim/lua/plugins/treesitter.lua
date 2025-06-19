@@ -16,6 +16,9 @@ return {
                 "bash",
                 "html",
                 "css",
+                "c_sharp",
+                "gdscript",
+                "gdshader",
             },
 
             -- Install parsers synchronously (only applied to `ensure_installed`)
