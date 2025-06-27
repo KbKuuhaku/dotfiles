@@ -113,9 +113,9 @@ source $ZSH/oh-my-zsh.sh
 
 ## Alias
 alias v=nvim
-alias godot="/home/kuuhaku/Apps/Godot/Godot_v4.4.1-stable_mono_linux.x86_64"
+alias godot="$HOME/Apps/Godot/Godot_v4.4.1-stable_mono_linux.x86_64 > /dev/null 2>&1 &"
+alias zotero="$HOME/Apps/Zotero_linux-x86_64/zotero > /dev/null 2>&1 &"
 
-# alias zotero=$HOME/dev/libs/zotero-app/zotero
 
 # Bind keys (bindkey -L to see all bindings)
 # bindkey "^;" clear-screen
