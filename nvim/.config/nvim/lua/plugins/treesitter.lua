@@ -19,6 +19,7 @@ return {
                 "c_sharp",
                 "gdscript",
                 "gdshader",
+                "latex",
             },
 
             -- Install parsers synchronously (only applied to `ensure_installed`)

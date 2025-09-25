@@ -78,7 +78,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
@@ -112,9 +111,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ## Alias
-alias v=nvim
 alias godot="$HOME/Apps/Godot/Godot_v4.4.1-stable_mono_linux.x86_64 > /dev/null 2>&1 &"
-alias zotero="$HOME/Apps/Zotero_linux-x86_64/zotero > /dev/null 2>&1 &"
+alias ls="eza -l --icons --git"
 
 
 # Bind keys (bindkey -L to see all bindings)
