@@ -152,4 +152,3 @@ source <(fzf --zsh)
 # export PYTHONPATH="${PYTHONPATH}:${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.15-cp310-cp310-manylinux_2_27_x86_64.whl"
 #
 export PATH="/home/kuuhaku/miniconda3/bin:$PATH"
-
