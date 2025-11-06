@@ -18,11 +18,8 @@ return { -- Autoformat
             lua = { 'stylua' },
             -- Conform can also run multiple formatters sequentially
             python = { "isort", "ruff_format" },
-            gdscript = { "gdformat" }
-            --
-            -- You can use a sub-list to tell conform to run *until* a formatter
-            -- is found.
-            -- javascript = { { "prettierd", "prettier" } },
+            gdscript = { "gdformat" },
+            typescript = { "prettierd" },
         },
     },
 }

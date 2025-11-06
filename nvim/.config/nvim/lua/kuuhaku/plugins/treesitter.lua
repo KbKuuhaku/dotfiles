@@ -16,10 +16,14 @@ return {
                 "bash",
                 "html",
                 "css",
+                "javascript",
+                "typescript",
+                "tsx",
                 "c_sharp",
                 "gdscript",
                 "gdshader",
                 "latex",
+                "go",
             },
 
             -- Install parsers synchronously (only applied to `ensure_installed`)

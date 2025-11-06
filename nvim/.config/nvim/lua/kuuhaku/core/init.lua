@@ -1,8 +1,5 @@
-require("kuuhaku.remap")
-require("kuuhaku.set")
--- require("kuuhaku.packer")
-require("kuuhaku.lazy")
-
+require("kuuhaku.core.remap")
+require("kuuhaku.core.set")
 
 -- Highlight yank
 vim.api.nvim_create_autocmd('TextYankPost', {
@@ -12,3 +9,4 @@ vim.api.nvim_create_autocmd('TextYankPost', {
         vim.highlight.on_yank()
     end,
 })
+

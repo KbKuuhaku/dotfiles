@@ -23,6 +23,9 @@ function M.config()
                     ["<C-j>"] = "move_selection_next",
                 }
             },
+            file_ignore_patterns = {
+                "node_modules"
+            }
         },
         pickers = {
             -- Default configuration for builtin pickers goes here:
@@ -46,7 +49,7 @@ function M.config()
                 previewer = false,
                 theme = "dropdown"
             },
-            git_files = {
+            help_tags = {
                 previewer = false,
                 theme = "dropdown"
             }
@@ -69,7 +72,6 @@ M.keys = {
     { "<leader>ff", "<cmd>Telescope find_files<CR>", { "n" }, },
     { "<leader>fb", "<cmd>Telescope buffers<CR>",    { "n" }, },
     { "<leader>fw", "<cmd>Telescope live_grep<CR>",  { "n" }, },
-    { "<leader>fg", "<cmd>Telescope git_files<CR>",  { "n" }, },
     { "<leader>fh", "<cmd>Telescope help_tags<CR>",  { "n" }, },
 }
 

@@ -151,4 +151,5 @@ source <(fzf --zsh)
 # export CARLA_ROOT="/home/kuuhaku/dev/projects/carla-simulator"
 # export PYTHONPATH="${PYTHONPATH}:${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.15-cp310-cp310-manylinux_2_27_x86_64.whl"
 #
-export PATH="/home/kuuhaku/miniconda3/bin:$PATH"
+export PATH="/usr/local/go/bin:/home/kuuhaku/miniconda3/bin:/usr/local/texlive/2025/bin/x86_64-linux/:$PATH"
+export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig"
