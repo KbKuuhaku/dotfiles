@@ -4,16 +4,16 @@ return {
         ensure_installed = {
             "gopls",
             "clangd",
-            "cssls",
+            -- "cssls",
             "gopls",
-            "html",
+            -- "html",
             "lua_ls",
             "marksman",
             "ty",
             "ruff",
             "rust_analyzer",
             "texlab",
-            "vtsls"
+            -- "vtsls"
         }
     },
     dependencies = {

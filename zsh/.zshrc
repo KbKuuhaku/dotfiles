@@ -110,46 +110,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-## Alias
-alias godot="$HOME/Apps/Godot/Godot_v4.4.1-stable_mono_linux.x86_64 > /dev/null 2>&1 &"
 alias ls="eza -l --icons --git"
 
 
-# Bind keys (bindkey -L to see all bindings)
-# bindkey "^;" clear-screen
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-export http_proxy="http://127.0.0.1:7890"
-export https_proxy="http://127.0.0.1:7890"
-
-# Be careful when appending on environmental(global) variables!
-if [[ -z $TMUX ]]; then
-    PATH="$HOME/.local/bin:/usr/local/cuda-12.1/bin:"${PATH}
-fi
-export PATH
-
-if [[ -z $TMUX ]]; then
-    LD_LIBRARY_PATH="/usr/local/cuda-12.1/lib64:"${LD_LIBRARY_PATH}
-fi
-export LD_LIBRARY_PATH
-fpath+=${ZDOTDIR:-~}/.zsh_functions
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
-
-# export CARLA_ROOT="/home/kuuhaku/dev/projects/carla-simulator"
-# export PYTHONPATH="${PYTHONPATH}:${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.15-cp310-cp310-manylinux_2_27_x86_64.whl"
-#
-export PATH="/usr/local/go/bin:/home/kuuhaku/miniconda3/bin:/usr/local/texlive/2025/bin/x86_64-linux/:$PATH"
-export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig"
