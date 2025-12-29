@@ -25,7 +25,7 @@ function M.config()
             },
             file_ignore_patterns = {
                 "node_modules"
-            }
+            },
         },
         pickers = {
             -- Default configuration for builtin pickers goes here:
@@ -37,21 +37,21 @@ function M.config()
             -- builtin picker
             find_files = {
                 previewer = false,
-                theme = "dropdown",
+                theme = "ivy",
                 follow = true, -- allow it to follow symlinks
                 hidden = true,
             },
             buffers = {
                 previewer = false,
-                theme = "dropdown",
+                theme = "ivy",
             },
             live_grep = {
                 previewer = false,
-                theme = "dropdown"
+                theme = "ivy"
             },
             help_tags = {
                 previewer = false,
-                theme = "dropdown"
+                theme = "ivy"
             }
         },
         extensions = {

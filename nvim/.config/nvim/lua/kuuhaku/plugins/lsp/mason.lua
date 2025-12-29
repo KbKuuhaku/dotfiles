@@ -13,6 +13,7 @@ return {
             "ruff",
             "rust_analyzer",
             "texlab",
+            "pbls",
             -- "vtsls"
         }
     },
