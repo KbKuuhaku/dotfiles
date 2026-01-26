@@ -24,6 +24,7 @@ return {
                 "gdshader",
                 "latex",
                 "go",
+                "rust",
             },
 
             -- Install parsers synchronously (only applied to `ensure_installed`)
@@ -36,6 +37,7 @@ return {
             highlight = {
                 enable = true,
                 additional_vim_regex_highlighting = false,
+                disable = { "dockerfile" },
             },
 
             indent = {

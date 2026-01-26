@@ -13,3 +13,4 @@ vim.keymap.set("n", "<M-]>", "<cmd>cnext<CR>")
 
 -- Disable macro
 vim.keymap.set("n", "q", "<Nop>")
+vim.keymap.set("n", "gf", "<Nop>")

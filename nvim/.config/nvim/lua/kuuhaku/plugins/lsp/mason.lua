@@ -14,6 +14,7 @@ return {
             "rust_analyzer",
             "texlab",
             "pbls",
+            "docker_language_server",
             -- "vtsls"
         }
     },
