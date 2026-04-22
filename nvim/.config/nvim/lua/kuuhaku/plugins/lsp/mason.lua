@@ -2,10 +2,8 @@ return {
     "mason-org/mason-lspconfig.nvim",
     opts = {
         ensure_installed = {
-            "gopls",
-            "clangd",
+            -- "clangd",
             -- "cssls",
-            "gopls",
             -- "html",
             "lua_ls",
             "marksman",
