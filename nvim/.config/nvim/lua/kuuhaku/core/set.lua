@@ -34,7 +34,7 @@ vim.o.foldenable = true
 
 vim.opt.scrolloff = 10
 
-vim.opt.updatetime = 50
+vim.opt.updatetime = 500
 vim.opt.colorcolumn = "100"
 
 -- Sync clipboard between OS and Neovim.

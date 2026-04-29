@@ -5,14 +5,15 @@ return {
             -- "clangd",
             -- "cssls",
             -- "html",
-            "lua_ls",
+            -- "lua_ls",
             "marksman",
             "ty",
             "ruff",
             "rust_analyzer",
             "texlab",
-            "pbls",
+            -- "pbls",
             "docker_language_server",
+            "neocmake",
             -- "vtsls"
         }
     },
